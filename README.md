@@ -25,3 +25,7 @@
 21. Man is to Computer Programmer as Woman is to Homemaker? Debiasing Word Embeddings https://arxiv.org/pdf/1607.06520.pdf
 22. Coreference Semantics from Web Features https://www.cs.unc.edu/~mbansal/papers/acl12_corefWeb.pdf
 23. Unsupervised Discovery of Biographical Structure from Text http://www.aclweb.org/anthology/Q14-1029
+24. Deep Reinforcement Learning for Mention-Ranking Coreference Models https://nlp.stanford.edu/pubs/clark2016deep.pdf
+25. Improving Coreference Resolution by Learning Entity-Level Distributed Representations https://nlp.stanford.edu/pubs/clark2016improving.pdf
+26. A Multi-Pass Sieve for Coreference Resolution https://nlp.stanford.edu/pubs/coreference-emnlp10.pdf
+27. Stanford’s Multi-Pass Sieve Coreference Resolution System at the CoNLL-2011 Shared Task https://nlp.stanford.edu/pubs/conllst2011-coref.pdf
