@@ -1,4 +1,4 @@
-# gendered_pronoun_resolution
+# GPR (Gendered Pronoun Resolution)
 
 # References
 
