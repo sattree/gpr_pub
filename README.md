@@ -31,3 +31,12 @@
 27. Stanford’s Multi-Pass Sieve Coreference Resolution System at the CoNLL-2011 Shared Task https://nlp.stanford.edu/pubs/conllst2011-coref.pdf
 28. Supervised Open Information Extraction https://pdfs.semanticscholar.org/c829/21a426fd8090564f459b0bd90cdb1e7a9e2d.pdf?_ga=2.222717915.1766913581.1549736104-833070973.1549736104
 29. Semi-supervised sequence tagging with bidirectional language models https://arxiv.org/pdf/1705.00108.pdf
+
+30.http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.106.8110&rep=rep1&type=pdf
+31. http://delivery.acm.org/10.1145/2390000/2380944/p1-guillou.pdf?ip=98.7.212.210&id=2380944&acc=OPEN&key=4D4702B0C3E38B35%2E4D4702B0C3E38B35%2E4D4702B0C3E38B35%2E6D218144511F3437&__acm__=1550118648_0568d9ed7bd44f2a45f0948f2791bf52
+32. http://aclweb.org/anthology/N04-1037
+33. http://aclweb.org/anthology/K16-1023
+34. http://aclweb.org/anthology/N04-1038
+35. http://delivery.acm.org/10.1145/1230000/1220180/p33-bergsma.pdf?ip=98.7.212.210&id=1220180&acc=OPEN&key=4D4702B0C3E38B35%2E4D4702B0C3E38B35%2E4D4702B0C3E38B35%2E6D218144511F3437&__acm__=1550117815_2bb67ed2de7a361bfc46b0717e8de7b8
+36. https://arxiv.org/pdf/1806.04168.pdf
+37. https://arxiv.org/pdf/1711.02013.pdf
