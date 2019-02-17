@@ -25,3 +25,18 @@
 21. Man is to Computer Programmer as Woman is to Homemaker? Debiasing Word Embeddings https://arxiv.org/pdf/1607.06520.pdf
 22. Coreference Semantics from Web Features https://www.cs.unc.edu/~mbansal/papers/acl12_corefWeb.pdf
 23. Unsupervised Discovery of Biographical Structure from Text http://www.aclweb.org/anthology/Q14-1029
+24. Deep Reinforcement Learning for Mention-Ranking Coreference Models https://nlp.stanford.edu/pubs/clark2016deep.pdf
+25. Improving Coreference Resolution by Learning Entity-Level Distributed Representations https://nlp.stanford.edu/pubs/clark2016improving.pdf
+26. A Multi-Pass Sieve for Coreference Resolution https://nlp.stanford.edu/pubs/coreference-emnlp10.pdf
+27. Stanford’s Multi-Pass Sieve Coreference Resolution System at the CoNLL-2011 Shared Task https://nlp.stanford.edu/pubs/conllst2011-coref.pdf
+28. Supervised Open Information Extraction https://pdfs.semanticscholar.org/c829/21a426fd8090564f459b0bd90cdb1e7a9e2d.pdf?_ga=2.222717915.1766913581.1549736104-833070973.1549736104
+29. Semi-supervised sequence tagging with bidirectional language models https://arxiv.org/pdf/1705.00108.pdf
+30. Improving Pronoun Resolution Using Statistics-Based Semantic Compatibility Information http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.106.8110&rep=rep1&type=pdf
+31. Improving Pronoun Translation for Statistical Machine Translation http://mt-archive.info/EACL-2012-Guillou.pdf
+32. The (Non)Utility of Predicate-Argument Frequencies for Pronoun Interpretation http://aclweb.org/anthology/N04-1037
+33. Coreference in Wikipedia: Main Concept Resolution http://aclweb.org/anthology/K16-1023
+34. Unsupervised Learning of Contextual Role Knowledge for Coreference Resolution http://aclweb.org/anthology/N04-1038
+35. Bootstrapping Path-Based Pronoun Resolution http://www.anthology.aclweb.org/P/P06/P06-1005.pdf
+36. Straight to the Tree: Constituency Parsing with Neural Syntactic Distance https://arxiv.org/pdf/1806.04168.pdf
+37. NEURAL LANGUAGE MODELING BY JOINTLY LEARNING SYNTAX AND LEXICON https://arxiv.org/pdf/1711.02013.pdf
+38. https://nlp.stanford.edu/software/dependencies_manual.pdf Stanford typed dependencies manual
