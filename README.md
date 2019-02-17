@@ -39,3 +39,4 @@
 35. Bootstrapping Path-Based Pronoun Resolution http://www.anthology.aclweb.org/P/P06/P06-1005.pdf
 36. Straight to the Tree: Constituency Parsing with Neural Syntactic Distance https://arxiv.org/pdf/1806.04168.pdf
 37. NEURAL LANGUAGE MODELING BY JOINTLY LEARNING SYNTAX AND LEXICON https://arxiv.org/pdf/1711.02013.pdf
+38. https://nlp.stanford.edu/software/dependencies_manual.pdf Stanford typed dependencies manual
