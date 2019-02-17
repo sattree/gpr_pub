@@ -31,8 +31,7 @@
 27. Stanford’s Multi-Pass Sieve Coreference Resolution System at the CoNLL-2011 Shared Task https://nlp.stanford.edu/pubs/conllst2011-coref.pdf
 28. Supervised Open Information Extraction https://pdfs.semanticscholar.org/c829/21a426fd8090564f459b0bd90cdb1e7a9e2d.pdf?_ga=2.222717915.1766913581.1549736104-833070973.1549736104
 29. Semi-supervised sequence tagging with bidirectional language models https://arxiv.org/pdf/1705.00108.pdf
-
-30.Improving Pronoun Resolution Using Statistics-Based Semantic Compatibility Information http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.106.8110&rep=rep1&type=pdf
+30. Improving Pronoun Resolution Using Statistics-Based Semantic Compatibility Information http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.106.8110&rep=rep1&type=pdf
 31. Improving Pronoun Translation for Statistical Machine Translation http://mt-archive.info/EACL-2012-Guillou.pdf
 32. The (Non)Utility of Predicate-Argument Frequencies for Pronoun Interpretation http://aclweb.org/anthology/N04-1037
 33. Coreference in Wikipedia: Main Concept Resolution http://aclweb.org/anthology/K16-1023
