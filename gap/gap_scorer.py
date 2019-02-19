@@ -23,10 +23,10 @@ import argparse
 from collections import defaultdict
 import csv
 
-from constants import Gender
-from constants import GOLD_FIELDNAMES
-from constants import PRONOUNS
-from constants import SYSTEM_FIELDNAMES
+from .constants import Gender
+from .constants import GOLD_FIELDNAMES
+from .constants import PRONOUNS
+from .constants import SYSTEM_FIELDNAMES
 
 
 class Annotation(object):

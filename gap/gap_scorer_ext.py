@@ -1,10 +1,10 @@
-from gap_scorer import Scores, make_scorecard, Annotation
+from .gap_scorer import Scores, make_scorecard, Annotation
 from collections import defaultdict
 
-from constants import Gender
-from constants import GOLD_FIELDNAMES
-from constants import PRONOUNS
-from constants import SYSTEM_FIELDNAMES
+from .constants import Gender
+from .constants import GOLD_FIELDNAMES
+from .constants import PRONOUNS
+from .constants import SYSTEM_FIELDNAMES
 
 import pandas as pd
 
