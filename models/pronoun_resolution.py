@@ -11,8 +11,11 @@ class PronounResolutionModel:
         self.backend = backend
 
     def batch_predict(fn):
-        def _predict(self, df, **kwargs):
+        def _predict(self, df, preprocessor=None, **kwargs):
             if isinstance(df, pd.DataFrame):
+                if preprocessor:
+                    preprocessor(df)
+                
                 rows = []
                 if self.n_jobs != 1:
                     with Parallel(n_jobs=self.n_jobs, verbose=self.verbose, backend=self.backend) as parallel:
