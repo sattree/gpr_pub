@@ -21,6 +21,7 @@ class BCS(Coref, StanfordModel):
                                                                                                         b_offset, 
                                                                                                         **kwargs)
         
+        print(os.getcwd())
         if not os.path.exists('tmp/text'):
             os.makedirs('tmp/text')
             os.makedirs('tmp/preprocessed')
