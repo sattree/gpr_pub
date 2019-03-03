@@ -45,4 +45,8 @@ class BCS(Coref, StanfordModel):
         if any([token not in tokens for token in tokens_[a_span[0]:a_span[1]]+tokens_[b_span[0]:b_span[1]]]):
             print('Tokens dont match', tokens, tokens_, a, b)
 
+        os.remove('tmp/text/{}'.format(id))
+        os.remove('tmp/preprocessed/{}'.format(id))
+        os.remove('tmp/coref/{}-0.pred_conll'.format(id))
+
         return tokens, list(clusters.values()), pronoun_offset, a_span, b_span
