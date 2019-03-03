@@ -1,3 +1,7 @@
+import os
+import subprocess
+
+from collections import defaultdict
 from allennlp.data.dataset_readers.dataset_utils.ontonotes import Ontonotes
 
 from ..heuristics.coref import Coref
@@ -16,6 +20,16 @@ class BCS(Coref, StanfordModel):
                                                                                                         a_offset, 
                                                                                                         b_offset, 
                                                                                                         **kwargs)
+        
+        if not os.path.exists('tmp/text'):
+            os.makedirs('tmp/text')
+            os.makedirs('tmp/preprocessed')
+            os.makedirs('tmp/coref')
+        with open('tmp/text/{0}'.format(id), 'w', encoding='utf-8') as f:
+            f.write(text)
+
+        subprocess.run('java -Xmx1g -cp berkeley-entity/berkeley-entity-1.0.jar edu.berkeley.nlp.entity.preprocess.PreprocessingDriver ++berkeley-entity/config/base.conf -execDir tmp/logs -inputDir tmp/text -outputDir tmp/preprocessed', shell=True)
+        subprocess.run('java -Xmx1g -cp berkeley-entity/berkeley-entity-1.0.jar edu.berkeley.nlp.entity.Driver ++berkeley-entity/config/base.conf -execDir tmp/logs/ -mode COREF_PREDICT -modelPath berkeley-entity/models/coref-onto.ser.gz -testPath tmp/preprocessed/ -outputPath tmp/coref -corefDocSuffix ""', shell=True)
         
         data = Ontonotes().dataset_document_iterator('tmp/coref/{}-0.pred_conll'.format(id))
         for i, doc in enumerate(data):
