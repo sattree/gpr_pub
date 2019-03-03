@@ -9,7 +9,7 @@ from modified_e2e_coref import coref_model
 from modified_e2e_coref import util
 
 class LeeEtAl2017(Coref, SpacyModel):
-    def __init__(self, tokenizer, config):
+    def __init__(self, tokenizer, config, verbose=0):
         util.set_gpus(0)
 
         config_name = config['name']
@@ -19,7 +19,10 @@ class LeeEtAl2017(Coref, SpacyModel):
         model_config['head_embeddings']['path'] = os.path.join(config['head_embeddings_root'], model_config['head_embeddings'].path)
         model_config['char_vocab_path'] = os.path.join(config['char_vocab_root'], model_config['char_vocab_path'])
 
-        print(pyhocon.HOCONConverter.convert(model_config, "hocon"))
+        if verbose:
+            print(pyhocon.HOCONConverter.convert(model_config, "hocon"))
+
+        tf.reset_default_graph()
 
         model = coref_model.CorefModel(model_config)
         
