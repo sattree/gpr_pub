@@ -14,7 +14,7 @@ class LeeEtAl2017(Coref, SpacyModel):
 
         config_name = config['name']
         model_config = pyhocon.ConfigFactory.parse_file(config['model'])[config_name]
-        model_config['log_dir'] = util.mkdirs(os.path.join(config['log_root'], config_name))
+        model_config['log_dir'] = util.mkdirs(config['log_root'])
         model_config['context_embeddings']['path'] = os.path.join(config['context_embeddings_root'], model_config['context_embeddings'].path)
         model_config['head_embeddings']['path'] = os.path.join(config['head_embeddings_root'], model_config['head_embeddings'].path)
         model_config['char_vocab_path'] = os.path.join(config['char_vocab_root'], model_config['char_vocab_path'])
