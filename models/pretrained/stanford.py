@@ -1,6 +1,8 @@
+import numpy as np
+
 from ..heuristics.coref import Coref
 from ..heuristics.stanford_base import StanfordModel
-from ...utils import api_call
+from utils import api_call
 
 class StanfordCorefModel(Coref, StanfordModel):
     def __init__(self, model, algo='neural', greedyness=0.5):
