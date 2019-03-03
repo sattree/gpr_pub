@@ -28,8 +28,8 @@ class BCS(Coref, StanfordModel):
         with open('tmp/text/{0}'.format(id), 'w', encoding='utf-8') as f:
             f.write(text)
 
-        subprocess.run('java -Xmx1g -cp berkeley-entity/berkeley-entity-1.0.jar edu.berkeley.nlp.entity.preprocess.PreprocessingDriver ++berkeley-entity/config/base.conf -execDir tmp/logs -inputDir tmp/text -outputDir tmp/preprocessed', shell=True)
-        subprocess.run('java -Xmx1g -cp berkeley-entity/berkeley-entity-1.0.jar edu.berkeley.nlp.entity.Driver ++berkeley-entity/config/base.conf -execDir tmp/logs/ -mode COREF_PREDICT -modelPath berkeley-entity/models/coref-onto.ser.gz -testPath tmp/preprocessed/ -outputPath tmp/coref -corefDocSuffix ""', shell=True)
+        subprocess.run('cd berkeley-entity && java -Xmx1g -cp berkeley-entity-1.0.jar edu.berkeley.nlp.entity.preprocess.PreprocessingDriver ++config/base.conf -execDir ../tmp/logs -inputDir ../tmp/text -outputDir ../tmp/preprocessed', shell=True)
+        subprocess.run('cd berkeley-entity && java -Xmx1g -cp berkeley-entity-1.0.jar edu.berkeley.nlp.entity.Driver ++config/base.conf -execDir ../tmp/logs/ -mode COREF_PREDICT -modelPath models/coref-onto.ser.gz -testPath ../tmp/preprocessed/ -outputPath ../tmp/coref -corefDocSuffix ""', shell=True)
         
         data = Ontonotes().dataset_document_iterator('tmp/coref/{}-0.pred_conll'.format(id))
         for i, doc in enumerate(data):
